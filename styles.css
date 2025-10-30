@@ -1,0 +1,15 @@
+:root{ --max-width:1100px; --accent:#1e73be; --muted:#666;}
+*{box-sizing:border-box}
+body{font-family:'Noto Sans SC',system-ui,Segoe UI,Arial; color:#222; margin:0; line-height:1.5;}
+.container{max-width:var(--max-width); margin:0 auto; padding:20px;}
+.site-header{background:#fff; border-bottom:1px solid #eee; position:sticky; top:0; z-index:10;}
+.site-header .container{display:flex; align-items:center; justify-content:space-between;}
+.brand{margin:8px 0; font-size:20px; color:var(--accent);}
+.main-nav a{margin-left:18px; text-decoration:none; color:var(--muted);}
+.main-nav a:hover{color:#000}
+.hero{display:flex; gap:24px; align-items:center; padding-top:30px; padding-bottom:30px;}
+.hero-left h2{margin:0 0 8px 0; font-size:28px;}
+.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px;}
+.card{border:1px solid #eee; padding:16px; border-radius:8px; background:#fff;}
+.news-list{list-style:none; padding:0; margin:0;}
+.site-footer{background:#fafafa; border-top:1px solid #eee; padding:12px 0; text-align:center; color:#777;}
