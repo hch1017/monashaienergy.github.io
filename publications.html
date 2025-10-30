@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Publications — Intelligame Lab</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html">Intelligame Lab</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="news.html">News</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    <h1>Publications</h1>
+    <div class="search"><input type="search" id="q" placeholder="Filter by keyword (e.g., PV, RL, FL)"></div>
+    <table class="table" id="pubs">
+      <thead><tr><th>Year</th><th>Title</th><th>Venue</th><th>Links</th></tr></thead>
+      <tbody>
+        <tr><td>2025</td><td>Safe RL for DN with Multi-Critic Lagrangian PPO</td><td>IEEE TSG</td><td><a href="#">PDF</a> · <a href="#">Code</a></td></tr>
+        <tr><td>2024</td><td>Privacy-Preserving PV Disaggregation with FL</td><td>IEEE TII</td><td><a href="#">PDF</a> · <a href="#">Code</a></td></tr>
+        <tr><td>2023</td><td>EV Charging Detection via Adaptive Windows</td><td>ACM e-Energy</td><td><a href="#">PDF</a></td></tr>
+      </tbody>
+    </table>
+    <p class="small">Tip: Replace rows with your BibTeX/links. The search box filters rows locally.</p>
+  </main>
+  <script>
+    const q=document.getElementById('q'); const rows=[...document.querySelectorAll('#pubs tbody tr')];
+    q&&q.addEventListener('input',()=>{const t=q.value.toLowerCase(); rows.forEach(r=>{r.style.display=r.innerText.toLowerCase().includes(t)?'':'none'})});
+  </script>
+  
+<footer class="footer">
+  <div class="container">
+    <p>© 2025 Intelligame Lab — Demo. Built with GitHub Pages.</p>
+  </div>
+</footer>
+
+</body>
+</html>

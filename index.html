@@ -1,73 +1,68 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Intelligame Lab - Demo</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Intelligame Lab</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Intelligame Lab — AI for Power & Energy Systems">
+  <meta property="og:title" content="Intelligame Lab">
+  <meta property="og:description" content="AI for Power & Energy Systems">
+  <meta property="og:type" content="website">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="brand">Intelligame Lab</h1>
-      <nav class="main-nav">
-        <a href="#">Home</a>
-        <a href="#news">News</a>
-        <a href="#research">Research</a>
-        <a href="#pubs">Publications</a>
-        <a href="#team">Team</a>
-      </nav>
-    </div>
-  </header>
+  
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html">Intelligame Lab</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="news.html">News</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <main>
-    <section class="hero container">
-      <div class="hero-left">
-        <h2>智能博弈实验室（Intelligame Lab）</h2>
-        <p>研究方向：AI 与智能电网交叉，能源系统预测、优化与智能控制。</p>
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="kicker">Welcome</div>
+        <h1>Intelligame Lab</h1>
+        <p>We study intelligent control and analytics for power & energy systems — from EV charging and CBESS coordination to grid-aware RL.</p>
+        <p class="small">This is a starter template. Replace content with your lab's info.</p>
       </div>
-      <div class="hero-right">
-        <img src="assets/logo.svg" alt="Lab logo" style="max-width:100%;height:auto;">
-      </div>
+      <div><img src="assets/hero.svg" alt="Hero" style="max-width:100%;height:auto"></div>
     </section>
 
-    <section id="news" class="container news">
-      <h3>News / 最新动态</h3>
-      <ul class="news-list">
-        <li><strong>2025.10</strong> — 站点雏形上线（GitHub Pages）。</li>
-        <li><strong>2025.09</strong> — 新论文被 IEEE TSG 接受。</li>
-      </ul>
-    </section>
-
-    <section id="research" class="container cards">
-      <h3>Research 研究方向</h3>
+    <section>
+      <div class="kicker">Latest</div>
       <div class="grid">
-        <div class="card"><h4>能源系统预测</h4><p>负荷/发电预测等。</p></div>
-        <div class="card"><h4>智能控制</h4><p>强化学习与优化。</p></div>
-        <div class="card"><h4>电力市场</h4><p>交易与博弈策略。</p></div>
+        <div class="card">
+          <div class="badge">News</div>
+          <h3>Paper accepted at IEEE TSG</h3>
+          <p>Our work on safe RL for distribution networks is accepted.</p>
+        </div>
+        <div class="card">
+          <div class="badge">Preprint</div>
+          <h3>PV disaggregation w/ privacy</h3>
+          <p>Federated disaggregation framework with strong privacy guarantees.</p>
+        </div>
+        <div class="card">
+          <div class="badge">Project</div>
+          <h3>EVCS multi-agent control</h3>
+          <p>Constrained POMDP + GAT encoders; open-source environment coming soon.</p>
+        </div>
       </div>
-    </section>
-
-    <section id="pubs" class="container pubs">
-      <h3>Publications / 部分论文</h3>
-      <ol>
-        <li>2025.09: Socially Aware Load Forecasting Utilizing LLMs — IEEE TII</li>
-        <li>2025.05: SocioDiff: Synthetic Load Dataset — IEEE TSG</li>
-      </ol>
-    </section>
-
-    <section id="team" class="container team">
-      <h3>Team 团队</h3>
-      <p>这里展示团队成员、合作者与学生。</p>
     </section>
   </main>
+  
+<footer class="footer">
+  <div class="container">
+    <p>© 2025 Intelligame Lab — Demo. Built with GitHub Pages.</p>
+  </div>
+</footer>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© Intelligame Lab — Demo</p>
-    </div>
-  </footer>
 </body>
 </html>
