@@ -1,4 +1,4 @@
-# Intelligame-like Site (Starter)
+# Starter
 
 一个极简静态站点模板，方便在 GitHub Pages 上快速上线：
 - `index.html`：主页
